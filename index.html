@@ -1,158 +1,920 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jackson Fuller's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="" alt="sunset" />
-          </a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackson Fuller - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/headshot.jpg" alt="Jackson Fuller" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jackson Fuller">Jackson Fuller</h1>
+
+          <p class="title">Software Developer</p>
         </div>
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jacksonf1204@gmail.com" class="contact-link">jacksonf1204@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (706) 207-5101</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/jacksonfuller2" class="contact-link" target="_blank">www.linkedin.com/in/jacksonfuller2</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Alpharetta, Georgia, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a detail-oriented and highly collaborative Computer Science graduate with hands-on full-stack
+            software development experience in Java, HTML, JavaScript, SQL, and React as well as data
+            management, reporting, and visualization experience in SAP. Skilled at building data-driven
+            applications, troubleshooting enterprise systems, and collaborating in Agile environments.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Technical Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Languages</h4>
+
+                <p class="service-item-text">
+                  Java, JavaScript, SQL, HTML, CSS, TypeScript
+                </p>
+              </div>
+
             </li>
-            <li>
-              <a href="#">About Me</a>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-layers.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frameworks & Technologies</h4>
+
+                <p class="service-item-text">
+                  Node.js, React, Rest APIs, Git
+                </p>
+              </div>
+
             </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-code"></i>Projects</a>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-database.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Databases & Tools</h4>
+
+                <p class="service-item-text">
+                  SAP S/4 Hana, KACE, SQL Databases, Tableau, Advanced Excel
+                </p>
+              </div>
+
             </li>
-            <li>
-              <a href="#"> <i class="fa-solid fa-burger"></i>Experience</a>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-puzzle-piece.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Specialties</h4>
+
+                <p class="service-item-text">
+                  Full-Stack Development, Data Analysis, API Integration, System Troubleshooting, Robotics, Agile Development, Testing
+                </p>
+              </div>
+
             </li>
-            <li>
-              <a class="btn" href="#">
-                <i class="fa-solid fa-user"></i> Log in
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+        <!--
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        -->
+
+
+        <!--
+          - testimonials modal
+        -->
+        
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+        <!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
               </a>
             </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
           </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Hero-->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-heading text-xxl">
-            Hello <i class="fa-regular fa-hand"></i>, I'm Jackson Fuller
-          </h1>
-          <p class="hero-text">
-            Recent College Graduate with a variety of experiences.
-          </p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Get Started</a>
-            <a href="#" class="btn">Connect with Me!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Skill Tree Section -->
-    <section class="skilltree bg-black">
-      <div class="container-sm">
-        <h2 class="skilltree-heading text-xl text-center">Skill Tree</h2>
-        <div class="skilltree-content">
-          <a href="#">
-            <img src="../images/sunset.jpg" alt="" />
-          </a>
 
-          <a href="#" class="btn btn-primary">Get Started</a>
-        </div>
-      </div>
-    </section>
-    <!-- Featured Projects -->
-    <section class="projects bg-dark">
-      <div class="container">
-        <h3 class="projects-heading text-xl text-center">Featured Projects</h3>
-        <div class="projects-grid">
-          <div class="card">
-            <p>Test paragraph</p>
-            <p>Jackson</p>
-            <p>Another Name</p>
-          </div>
-          <div class="card">
-            <p>Test paragraph2</p>
-            <p>Jackson</p>
-            <p>Another Name</p>
-          </div>
-          <div class="card">
-            <p>Test paragraph3</p>
-            <p>Jackson</p>
-            <p>Another Name</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Certificates -->
-    <section class="certificates">
-      <div class="container-sm">
-        <h3 class="certificates-heading text-xl text-center">Certificates</h3>
-        <div class="certificates-grid">
-          <!-- Card 1 -->
-          <div class="card bg-light">
-            <div class="certificates-card-header">
-              <h4 class="certificates-heading text-xl">Certificate 1</h4>
-              <p class="certificates-card-subheading">Test subheading</p>
-            </div>
-            <div class="certificates-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i>Real-Time</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-block">Get Started</a>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="card bg-black">
-            <div class="certificates-card-header">
-              <h4 class="certificates-heading text-xl">Certificate 2</h4>
-              <p class="certificates-card-subheading">Test subheading</p>
-              <span class="text-xl">Test Span</span>
-            </div>
-            <div class="certificates-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i>Real-Time</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-block">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer bg-black">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a href="index.html">
-              <img src="#" alt="logo" />
-              <!-- Add logo here -->
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </footer>
+        </section>
+        -->
+      </article>
 
-    <script src="js/main.js"></script>
-  </body>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kennesaw State University</h4>
+              <h3 class="h4 timeline-item-title">Bachelor of Science in Computer Science</h3>
+
+              <span>August 2021 — December 2024</span>
+
+              <p class="timeline-text">
+                GPA: 3.73
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mingledorff's Inc<br>Inventory Buyer</h4>
+
+              <span>June 2024 — Present</span>
+
+              <p class="timeline-text">
+                · Purchases and manages over $5 million in HVAC parts, supplies, and equipment for 45 branches and MMI locations. 
+                <br>· Builds data driven reports in Tableau and Excel to drive growth and improvement across all product lines for the team, saving an 
+                average of 12 hours per week and improving purchasing decisions.  
+                <br>· Maintains consistent communication with branch managers and operations teams to keep accurate ordering controls and stock levels. 
+                <br>· Represents Mingledorff’s at national meetings engaging with vendors to review performance, opportunities for improvement, 
+                and new business opportunities. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mingledorff's Inc<br>Level 2 Application Support Specialist</h4>
+
+              <span>August 2023 - June 2024</span>
+
+              <p class="timeline-text">
+                · Supported internal and external facing applications including SAP S/4HANA, SingleSource eCommerce, an in-house order entry system, 
+                Latitude Warehouse Management, HVAC Partners, and Billtrust through in-depth analysis and troubleshooting utilizing the KACE ticketing system. 
+                <br>· Developed SQL queries to diagnose and resolve data inconsistencies across multiple databases and systems ensuring data integrity. 
+                <br>· Created and maintained SOP documentation to streamline onboarding and incident resolution. 
+                <br>· Consistently resolved an average of 320 tickets per month. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mingledorff's Inc<br>Warehouse Associate</h4>
+
+              <span>May 2021 — August 2023</span>
+
+              <p class="timeline-text">
+                · Operated within Latitude Warehouse Management and SAP systems to process incoming and outgoing orders with 99% accuracy. 
+                <br>· Supported troubleshooting of order discrepancies and data entry errors across multiple systems. 
+                <br>· Collaborated with IT and logistics teams to improve data accuracy and operational efficiency. 
+                <br>· Collaborated with customers and internal teams to ensure on-time error-free fulfillment, strengthening communication and problem-solving skills. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">QualityFun, LLC<br>Owner</h4>
+
+              <span>February 2023 — Present</span>
+
+              <p class="timeline-text">
+                · Built and manage an online store specializing in collectible items, handling product sourcing, sales, and fulfillment. 
+                <br>· Perform data analysis on sales trends, customer behavior, and pricing strategies to identify process improvements and optimize efficiency. 
+                <br>· Negotiate directly with sellers to secure cost reductions and margin increases, improving overall business profitability. 
+                <br>· Develop and refine automated workflows for inventory management and order processing to streamline operations. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">East Jackson High School Robotics<br>Intern</h4>
+
+              <span>September 2020 — May 2021</span>
+
+              <p class="timeline-text">
+                · Mentored and trained students on Java based robotics programming and mechanical design. 
+                <br>· Helped start up the newly formed Jackson County High School Robotics Team and support them by demonstrating programming techniques 
+                and troubleshooting issues during competitions. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Jackson County Community Outreach<br>Intern</h4>
+
+              <span>September 2019 — May 2021</span>
+
+              <p class="timeline-text">
+                · Assisted in planning fundraising events, scholarships programs, and annual community banquets. 
+                <br>· Spoke at the 2019 annual banquet and supported event logistics and guest coordination. 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Technical Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Languages</h4>
+
+                <p class="service-item-text">
+                  Java, JavaScript, SQL, HTML, CSS, TypeScript
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-layers.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frameworks & Technologies</h4>
+
+                <p class="service-item-text">
+                  Node.js, React, Rest APIs, Git
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-database.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Databases & Tools</h4>
+
+                <p class="service-item-text">
+                  SAP S/4 Hana, KACE, SQL Databases, Tableau, Advanced Excel
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-puzzle-piece.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Specialties</h4>
+
+                <p class="service-item-text">
+                  Full-Stack Development, Data Analysis, API Integration, System Troubleshooting, Robotics, Agile Development, Testing
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://indy-03-flight-data.github.io/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/jet.jpg" alt="NWKFRAFT Pre-Flight Information" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">NWKRAFT Pre-Flight Information</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211508.8780386073!2d-84.44479214076489!3d34.07396881076925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5749f68c5f537%3A0xc112d56128654c4e!2sAlpharetta%2C%20GA!5e0!3m2!1sen!2sus!4v1765768275172!5m2!1sen!2sus" 
+
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/jacksonf1204@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
