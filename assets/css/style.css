@@ -584,6 +584,45 @@ main {
   line-height: 1.6;
 }
 
+.resume {
+  position: relative !important;
+}
+
+.download-btn {
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-size: var(--fs-8);
+  box-shadow: var(--shadow-2);
+  z-index: 10;
+  transition: var(--transition-1);
+}
+
+.download-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.download-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+  transform: translateY(-2px);
+}
+
+.download-btn ion-icon {
+  font-size: 18px;
+}
+
 /**
  * #testimonials 
  */
@@ -1347,6 +1386,13 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
+  /* Resume */
+  .download-btn {
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1633,6 +1679,13 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 25px;
   }
 
+  /* Resume */
+  .download-btn {
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
   /**
    * #PORTFOLIO, BLOG
    */
@@ -1730,6 +1783,13 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 80px;
+  }
+
+  /* Resume */
+  .download-btn {
+    top: 10px;
+    right: 10px;
+    z-index: 1;
   }
 
   /**
@@ -1867,6 +1927,12 @@ textarea.form-input::-webkit-resizer {
     gap: 20px 25px;
   }
 
+  /* Resume */
+  .download-btn {
+    top: 90px;
+    right: 40px;
+  }
+  
   /* testimonials */
 
   .testimonials-item {
@@ -2033,3 +2099,4 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 }
+
